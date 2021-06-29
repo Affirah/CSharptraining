@@ -1,31 +1,58 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CSharpTraining._0_FirstSteps;
 
 namespace CSharpTraining
 {
 	public class Program
 	{
+		private const string Greeting = "Hi";
+		private const string Q1 = "Hi! What is your name?";
+		private const string Q2 = "How old are you?";
+	
+		private static string Ans1;
+		private static string Ans2;
+
 		public static void Main(string[] args)
 		{
-			//Variable declaration
-			string value;
+		
+			//Class is like template
+			//BasicCSharpRun is a METHOD that is defined in the CLASS name basicOfCSharp since we used PUBLIC
+			//We can directly call the Method in this class as we used STATIC and it can be called using .
+			//BasicOfCSharp.BasicCSharpRun();
+			//Constants are like class fields
 
-			//Assign Variable
-			value = "Good Day";
+		
+			Console.WriteLine(Q1);
+			Ans1 = Console.ReadLine();
 
-			//ReadLine
-			Console.WriteLine("AJ " + value);
-			Console.WriteLine(Sum(2, 3));
+			Console.WriteLine(Q2);
+			Ans2 = Console.ReadLine();
 
-			//PrintLine
-			Console.ReadLine();
-		}
-		public static int Sum(int value1, int value2)
-		{
-			return value1 + value2;
+			int age = int.Parse(Ans2);
+
+			if (age > 0 && age < 99)
+
+			{ if (age < 5)
+
+				{
+					Console.WriteLine(  Greeting  +   Ans1 + "You have a Free Pass");
+				}
+
+				else if (int.Parse(Ans2) < 10)
+
+
+				{
+					Console.WriteLine(Greeting + Ans1 + "10% OFF");
+				}
+
+				else
+				{
+					Console.WriteLine(Greeting + Ans1 + "Enjoy the theme park");
+				}
+			}
+				Console.ReadLine();		
+		
+		
 		}
 	}
 }

@@ -1,58 +1,39 @@
 ﻿using System;
 using CSharpTraining._0_FirstSteps;
+using CSharpTraining._2_Datatypes.ValueTypes;
 
 namespace CSharpTraining
 {
 	public class Program
 	{
-		private const string Greeting = "Hi";
-		private const string Q1 = "Hi! What is your name?";
-		private const string Q2 = "How old are you?";
-	
-		private static string Ans1;
-		private static string Ans2;
+			public static void Main(string[] args)
+        {
 
-		public static void Main(string[] args)
-		{
-		
-			//Class is like template
-			//BasicCSharpRun is a METHOD that is defined in the CLASS name basicOfCSharp since we used PUBLIC
-			//We can directly call the Method in this class as we used STATIC and it can be called using .
-			//BasicOfCSharp.BasicCSharpRun();
-			//Constants are like class fields
+            //Bool1.Run();
+            //Console.ReadLine();		
 
-		
-			Console.WriteLine(Q1);
-			Ans1 = Console.ReadLine();
+            //Char1.Run();
+            //Console.ReadLine();
 
-			Console.WriteLine(Q2);
-			Ans2 = Console.ReadLine();
+            //Decimal1.Run();
+            //Console.ReadLine(); //Result will be 3.4419699046255517211703958692
 
-			int age = int.Parse(Ans2);
+            //Double1.Run();
+            //Console.ReadLine(); // Result will be 3.44196990462555
 
-			if (age > 0 && age < 99)
+            //Float1.Run();
+            //Console.ReadLine(); // Result will be 3.44197 (All the above 3 have same input but different datatypes results in different precisions in results).
 
-			{ if (age < 5)
+            //int1.Run();
+            //Console.ReadLine(); // Result will be a : 20, b : 5, 2147483647
 
-				{
-					Console.WriteLine(  Greeting  +   Ans1 + "You have a Free Pass");
-				}
+            //Short1.Run();
+            //Console.ReadLine(); // Result will be a: 20, b : 5; Maximum value : 32767
 
-				else if (int.Parse(Ans2) < 10)
+            Long1.Run();
+            Console.ReadLine(); // Result will be a: 20, b : 5; Maximum value : 9223372036854775807 (Above 3 different datatypes are different in the range and storage)
 
-
-				{
-					Console.WriteLine(Greeting + Ans1 + "10% OFF");
-				}
-
-				else
-				{
-					Console.WriteLine(Greeting + Ans1 + "Enjoy the theme park");
-				}
-			}
-				Console.ReadLine();		
-		
-		
-		}
-	}
+            
+        }
+    }
 }

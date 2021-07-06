@@ -14,7 +14,7 @@ namespace CSharpTraining._0_FirstSteps
             message = " Have a nice day!";
 
             //Declare and assign
-            string message2 = "Hello World!";
+            //string message2 = "Hello World!";
 
             //Print variable
             Console.WriteLine("Hello Retail Express Team" + message);

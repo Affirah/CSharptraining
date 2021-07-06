@@ -44,6 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="0_FirstSteps\BasicOfCSharp.cs" />
+    <Compile Include="2_Datatypes\ValueTypes\Bool1.cs" />
+    <Compile Include="2_Datatypes\ValueTypes\Char1.cs" />
+    <Compile Include="2_Datatypes\ValueTypes\Decimal1.cs" />
+    <Compile Include="2_Datatypes\ValueTypes\Double1.cs" />
+    <Compile Include="2_Datatypes\ValueTypes\Float1.cs" />
+    <Compile Include="2_Datatypes\ValueTypes\int1.cs" />
+    <Compile Include="2_Datatypes\ValueTypes\Long1.cs" />
+    <Compile Include="2_Datatypes\ValueTypes\Short1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -52,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="1_ConsoleAppAndIfStatements\" />
+    <Folder Include="2_Datatypes\ReferenceTypes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

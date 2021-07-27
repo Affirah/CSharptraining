@@ -4,7 +4,7 @@ namespace CSharpTraining._2_Datatypes.ValueTypes
 {
     public class Short1
     {
-        public static void Run()
+        public static void ShortRun()
 
         {
             Int16 a = 20; //Storage capacity will vary if we use Int32

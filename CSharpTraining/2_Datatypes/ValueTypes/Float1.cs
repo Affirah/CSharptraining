@@ -4,7 +4,7 @@ namespace CSharpTraining._2_Datatypes.ValueTypes
 {
     public class Float1
     {
-        public static void Run()
+        public static void FloatRun()
 
         {
             float price = 19.9978451458744555f;

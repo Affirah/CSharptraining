@@ -4,7 +4,7 @@ namespace CSharpTraining._2_Datatypes.ValueTypes
 {
     public class Long1
     {
-        public static void Run()
+        public static void LongRun()
 
         {
             Int64 a = 20; //Storage capacity will vary if we use Int32

@@ -4,7 +4,7 @@ namespace CSharpTraining._2_Datatypes.ValueTypes
 {
     public class Decimal1
     {
-        public static void Run()
+        public static void DecimalRun()
         
         {
             decimal price = 19.9978451458744555m;
